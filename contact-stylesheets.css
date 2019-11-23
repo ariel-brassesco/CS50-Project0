@@ -1,0 +1,33 @@
+#form {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+#form input {
+    margin-bottom: 5px;
+}
+
+form {
+    display: inline-block;
+}
+
+#options {
+    text-align: left;
+    width: inherit;
+    margin: 0 auto;
+}
+.btn-form {
+    padding: 5px 10px 5px 10px;
+    font-size: 18px;
+    background-color: rgb(30, 181, 252);
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+.btn-form:hover {
+    color: white;
+    opacity: 80%;
+    box-shadow: 0 0 2px 1px blue;
+}
+

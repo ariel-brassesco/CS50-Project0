@@ -1,0 +1,41 @@
+@media (max-width: 700px) {
+
+    .header li {
+        flex-basis: 100%;
+    }
+
+    .section {
+        flex-basis: 100%;
+    }
+
+    footer {
+        height: auto;
+    }
+
+    .grid-container {
+
+        grid-template-areas:
+        "header"
+        "sidebar"
+        "main"
+        "footer";
+    }
+
+    .grid-sidebar {
+        justify-self: stretch;
+        align-self: center;
+    }
+
+    .section table{
+        margin:auto;
+    }
+}
+
+@media (max-width: 768px) {
+    #goals {
+        margin: 0 auto 10px auto;
+    }
+
+}
+
+

@@ -1,7 +1,65 @@
 
-.grid {
+.grid-container {
+    display: -moz-grid;
     display: grid;
-    
 
+    grid-template-columns: auto;
+    grid-template-areas:
+    "header header header header"
+    "sidebar main main main"
+    "footer footer footer footer";
+    gap: 0 10px;
+    place-items: center center;
+    align-content: space-between;
+}
+
+.grid-header {
+    grid-area: header;
+    justify-self: stretch;
+}
+
+.grid-sidebar {
+    grid-area: sidebar;
+    justify-self: start;
+    align-self: stretch;
+}
+
+.grid-main {
+    grid-area: main;
+    align-self: center;
+}
+
+.grid-footer {
+    grid-area: footer;
+    margin-top: 0;
+}
+
+.grid-sidebar {
+    height: auto;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.363);
+}
+.section table{
+    border-collapse: separate;
+    border-spacing: 0 5px;
+}
+
+.section tr {
+    background-color: white;
+}
+
+.section td:first-child {
+    padding-right: 10px;
+    text-align: right;
+    font-weight: bold;
+}
+
+.section td:last-child {
+    padding-left: 10px;
+    text-align: left;
+}
+
+.section tr:hover {
+    background-color: lightgrey;
 }
 

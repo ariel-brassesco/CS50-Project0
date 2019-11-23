@@ -4,6 +4,7 @@
         <!-- Responsive -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="media.css">
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -12,6 +13,9 @@
         <link rel="stylesheet" href="stylesheets.css">
         <link rel="stylesheet" href="about-stylesheets.css">
 
+        <!-- Sass CSS -->
+        <link rel="stylesheet" href="sass-style.css">
+
         <!-- Title of Page -->
         <title>About Me - My First Webpage</title>
         <link rel="shortcut icon" href="images/edX_icon.png" type="image/png">
@@ -19,103 +23,131 @@
         <!-- Links -->
         <link rel="index" href="index.html" title="Home">
         <link rel="contact" href="contact.html" title="Contact Me">
+        <link rel="coding" href="coding.html" title="Learn to Code">
         
-       
-        
-        
-
     </head>
 
     <body>
-        <!-- Start Header -->
-        <header>
-            <ul class="header">
-                <li><a href="https://www.edx.org/" title="Go to edX Web Page" target="_blank">
-                    <img src="images/edX_logo.png" alt="edX logo"></a></li>
-                <li><h1>My First Webpage</h1></li>
-                <li></li>
-            </ul>
-        </header>
-
-        <nav>
-            <ul class="header navigation">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="page4.html">Expectation</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
-            </ul>
-        </nav>
-        
-        <!-- Finish Header -->
-
         <!-- Start Content -->
-        <article class="grid">
-                <aside>
-                        <div class="section">
-                            <img src="images/edX_logo.png" alt="photo">
-                            <p>Hello! My name is Ariel, 
-                                I am a Nuclear Engineering trying to change my career to Web Developer.</p>
-                        </div>
-                </aside>
-
-                <section>
-                        <div class="content">
-                                <h1 id="project0">CS50-Project 0: Homepage</h1>
-                    
-                                <h2 id="objectives">Objectives</h2>
-                                <ul>
-                                    <li>
-                                        Become more comfortable with HTML and CSS to design and style webpages.
-                                    </li>
-                                    <li>
-                                        Learn to use SCSS to write more complex stylesheets for your webpages.
-                                    </li>
-                                </ul>
-                    
-                                <h2 id="requirements">Requirements</h2>
-                                <p>Alright, now it’s time to make your website your own. 
-                                    Design a personal webpage about yourself, one of your interests, 
-                                    or any other topic of your choice. The subject matter, 
-                                    look and feel, and design of the site are entirely up to you, 
-                                    subject to the following requirements:</p>
-                                <ul>
-                                    <li>Your website must contain at least four different <code class="highlighter-rouge">.html</code> pages,
-                                         and it should be possible to get from any page on your website 
-                                         to any other page by following one or more hyperlinks.</li>
-                                    <li>Your website must include at least one list (ordered or unordered), 
-                                        at least one table, and at least one image.</li>
-                                    <li>Your website must have at least one stylesheet file.</li>    
-                                    <li>Your stylesheet(s) must use at least five different CSS properties,
-                                         and at least five different types of CSS selectors. You must use 
-                                         the <code>#id</code> selector at least once, and the <code>.class</code> selector at least once.</li>    
-                                    <li>Your stylesheet(s) must include at least one mobile-responsive 
-                                        <code>@media</code> query, such that something about the styling changes for 
-                                        smaller screens.</li>    
-                                    <li>You must use Bootstrap 4 on your website, taking advantage of at least 
-                                        one Bootstrap component, and using at least two Bootstrap columns for 
-                                        layout purposes using Bootstrap’s grid model.</li>    
-                                    <li>Your stylesheets must use at least one SCSS variable, 
-                                        at least one example of SCSS nesting, and at least one use of SCSS 
-                                        inheritance.</li>
-                                </ul>
-                           </div>
-                </section>
-
-            </hr>
-            <div class="btn btn-arrow-up">
-                <a href="#" role="switch">Go to Top!</a>
-            </div>
+        <div class="grid-container">
+            <!-- Start Header -->
+            <header class="grid-header">
+                <ul class="header">
+                    <li><a href="https://www.edx.org/" title="Go to edX Web Page">
+                        <img src="images/edX_logo.png" alt="edX logo"></a></li>
+                    <li><h1>My First Webpage</h1></li>
+                    <li></li>
+                </ul>
+        
+                <ul class="header navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="coding.html">Learn to Code</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </header>
+            <!-- Finish Header -->
             
-            </hr>
+            <!-- Start Sidebar Description-->
+            <div class="grid-sidebar">
+                <div class="section">
+                    <img src="images/My_photo.jpg" title="Ariel Brassesco" alt="photo">
+                </div>
+                <div class="section">
+                    <table>
+                        <tr>
+                            <td> First Name</td>
+                            <td> Ariel</td>
+                        </tr>
+                        <tr>
+                            <td> Last Name</td>
+                            <td> Brassesco</td>
+                        </tr>
+                        <tr>
+                            <td> Birthday</td>
+                            <td> 18th June 1987</td>
+                        </tr>
+                        <tr>
+                            <td> Country</td>
+                            <td> Argentina</td>
+                        </tr>
+                        <tr>
+                            <td> E-mail</td>
+                            <td> ariel.brassesco@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td> Bachelor Degree</td>    
+                            <td> Nuclear Engineer</td>
+                        </tr>
+                    </table>
 
-        </article>
-       
-
-       
-     <!-- Finish Content-->       
-       
-
+                    <ul>
+                        <caption><b>INDEX</b></caption>
+                        <li><a href="#objective">Objective</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#certifications">Certifications</a></li>
+                        <li><a href="#hobby">Hobbies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- End Sidebar Description-->
+            <!-- Start Content -->
+            <div class="grid-main">
+                <div class="content" id="objective">
+                    <h1>Objective</h1>
+                    <hr>
+                    <p>Learn Web Development tools, gain experience and improve my skills.</p>
+                </div>
+                <div class="content" id="experience">
+                    <h1>Experience</h1>
+                    <hr>
+                    <p>2012 - 2019</p>
+                    <p>Nuclear Safety Engineer, Nulceoelectrica Argentina SA, Buenos Aires, Argentina</p>
+                    Responsabilities:
+                    <ul> 
+                        <li>Perform and maintain the Probabilistic Safety Assessment (PSA) in the Nuclear Power Plants (NPPs).</li>
+                        <li>Perform the analysis of the results and propose improvements in the NPPs.</li>
+                        <li>Update and research the statistical methods for PSA.</li>
+                    </ul>
+                </div>
+                <div class="content" id="education">
+                    <h1>Education</h1>
+                    <hr>
+                    <p> Bachelor of Science: <b>Nulcear Engineering</b> - 2010 National University of Cuyo, 
+                        <a href="https://www.ib.edu.ar/" target="_blank">Balseiro Institute</a>, Argentina </p>
+                </div>
+                <div class="content" id="certifications">
+                    <h1>Certifications</h1>
+                    <hr>
+                    <ul style="display: flex; flex-flow: row wrap; list-style: none;">
+                        <li style="padding: 5px;"><img src="images/cert-1014-16020127-HTML.jpg" alt="HTML_SoloLearn" width="400"></li>
+                        <li style="padding: 5px;"><img src="images/cert-1023-16020127-CSS.jpg" alt="CSS_SoloLearn" width="400"></li>
+                        <li style="padding: 5px;"><img src="images/cert-1060-16020127-SQL.jpg" alt="SQL_SoloLearn" width="400"></li>
+                        <li style="padding: 5px;"><img src="images/cert-1073-16020127-Python3.jpg" alt="Python3_SoloLearn" width="400"></li>
+                    </ul>
+                </div>
+                <div class="content" id="hobby">
+                    <h1>Hobbies</h1>
+                    <hr>
+                    <ul>
+                        <li>Soccer player (Amateur - Level God)</li>
+                        <li>Movies like Hollywood!</li>
+                        <li>A big fan of <b>MARVEL!</b></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Finish Content-->
+            <!-- Start Footer-->
+            <footer class="grid-footer">
+                <a href="https://github.com/ariel-brassesco"><img src="images/github.png" alt="github_logo"></a>
+                <a href="https://ar.linkedin.com/in/ariel-brassesco-878974b6"><img src="images/linkedin.png"></a>
+                <a href="contact.html"><img src="images/gmail.png"></a>
+    
+                <!-- [Github icon] --> <div class="copyright">Github Icon made by <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+                <!--[Linkedin icon] --> <div class="copyright">Linkedin Icon made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+                <!--[Gmail icon] --> <div class="copyright">Gmail Icon made by <a href="https://www.flaticon.com/authors/good-ware" title="Good Ware">Good Ware</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+            </footer>
+        </div>
     </body>
-
-
 </html>

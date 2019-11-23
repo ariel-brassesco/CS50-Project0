@@ -4,12 +4,17 @@
         <!-- Responsive -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="media.css">
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
         <!-- CSS -->
         <link rel="stylesheet" href="stylesheets.css">
+        
+
+        <!-- Sass CSS -->
+        <link rel="stylesheet" href="sass-style.css">
        
 
         <!-- Title of Page -->
@@ -19,6 +24,7 @@
         <!-- Links -->
         <link rel="about" href="about.html" title="About Me">
         <link rel="contact" href="contact.html" title="Contact Me">
+        <link rel="coding" href="coding.html" title="Learn to Code">
         
        
         
@@ -28,7 +34,7 @@
         <!-- Start Header -->
         <header>
             <ul class="header">
-                <li><a href="https://www.edx.org/" title="Go to edX Web Page" target="_blank">
+                <li><a href="https://www.edx.org/" title="Go to edX Web Page">
                     <img src="images/edX_logo.png" alt="edX logo"></a></li>
                 <li><h1>My First Webpage</h1></li>
                 <li></li>
@@ -37,7 +43,7 @@
             <ul class="header navigation">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Me</a></li>
-                <li><a href="page4.html">Expectation</a></li>
+                <li><a href="coding.html">Learn to Code</a></li>
                 <li><a href="contact.html">Contact Me</a></li>
             </ul>
         </header>
@@ -46,34 +52,38 @@
         <!-- Start Content -->
        <div class="container">
             <div class="row">
-                <div class="col-md-1"></div>
-                <div class="col-md-3 col-sm-12 section">  
-                    <img src="images/edX_logo.png" alt="photo">                      
-                    <p>Hello! My name is Ariel, I am a Nuclear Engineering trying to change my career to Web Developer.
-                        </br>
+                <div class="section col-md-4">  
+                    <div><img src="images/My_photo.jpg" alt="photo" class="rounded-circle"></div>
+                    <div><p><i><b>"Hello !!! My name is Ariel,<br> I am a Nuclear Engineering trying to change my career to Web Developer"</i></b>
+                        <br>
                         <a class="btn btn-secondary btn-sm" href="about.html" role="button"><strong>Read More &raquo;</strong></a>
                     </p>
+                    </div>
                 </div>
-                <div class="col-md-3 col-sm-12 section">
-                    <img src="images/edX_logo.png" alt="photo">    
-                    <p>Hello! My name is Ariel, i am a Nuclear Engineering learning Web Development.
-                        </br>
-                        <a class="btn btn-secondary btn-sm" href="page4.html" role="button"><strong>Read More &raquo;</strong></a>
+
+                <div class="section col-md-4">
+                    <div><img src="images/coding.jpeg" alt="Learn to Code" class="rounded-circle"></div>
+                    <div><p><i><b>"I am studing a lot of coding. HTML, CSS, JavaScript and Python.
+                         I enroll in several course and take some tutorial, I will take much more."</i></b>
+                         <br>                         
+                        <a class="btn btn-secondary btn-sm" href="coding.html" role="button"><strong>Read More &raquo;</strong></a>
                     </p>
+                    </div>
                 </div>
-                <div class="col-md-3 section">
-                    <img src="images/edX_logo.png" alt="photo">
-                    <p>Hello! My name is Ariel, i am a Nuclear Engineering learning Web Development.
-                        </br>
+
+                <div class="section col-md-4">
+                    <div><img src="images/contact-me.png" alt="Contact Me"></div>
+                    <div><p><b>Here you can contact me, send me a suggestion, tips, advice or just a message you want.</b>
+                        <br>                        
                         <a class="btn btn-secondary btn-sm" href="contact.html" role="button"><strong>Read More &raquo;</strong></a>
                     </p>
+                    </div>
+                    
                 </div>
-                <div class="col-md-1"></div>
             </div>
-            <hr>
        </div>
-
-       <div class="content">
+       <hr>
+       <div class="container">
             <h1 id="project0">CS50-Project 0: Homepage</h1>
 
             <h2 id="objectives">Objectives</h2>
@@ -87,12 +97,7 @@
             </ul>
 
             <h2 id="requirements">Requirements</h2>
-            <p>Alright, now it’s time to make your website your own. 
-                Design a personal webpage about yourself, one of your interests, 
-                or any other topic of your choice. The subject matter, 
-                look and feel, and design of the site are entirely up to you, 
-                subject to the following requirements:</p>
-            <ul>
+                <ul>
                 <li>Your website must contain at least four different <code class="highlighter-rouge">.html</code> pages,
                      and it should be possible to get from any page on your website 
                      to any other page by following one or more hyperlinks.</li>
@@ -113,24 +118,24 @@
                     inheritance.</li>
             </ul>
        </div>
-    </hr>
+    <hr>
        
-           <a class="btn btn-primary" href="#" role="button"><strong>Go to Top</strong></a>
+        <div id="go_top"><p>hola</p><a class="btn btn-primary" href="#" role="button"><strong>Go to Top</strong></a></div>
        
     </hr>
      <!-- Finish Content-->
 
        <!-- Start Footer-->
-       <div id="footer">
+       <footer>
             <a href="https://github.com/ariel-brassesco"><img src="images/github.png" alt="github_logo"></a>
             <a href="https://ar.linkedin.com/in/ariel-brassesco-878974b6"><img src="images/linkedin.png"></a>
-            <a href="page4.html"><img src="images/gmail.png"></a>
+            <a href="contact.html"><img src="images/gmail.png"></a>
 
             <!-- [Github icon] --> <div class="copyright">Github Icon made by <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
             <!--[Linkedin icon] --> <div class="copyright">Linkedin Icon made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
             <!--[Gmail icon] --> <div class="copyright">Gmail Icon made by <a href="https://www.flaticon.com/authors/good-ware" title="Good Ware">Good Ware</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
             
-        </div>
+       </footer>
 
 
        
