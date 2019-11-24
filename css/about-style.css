@@ -1,0 +1,53 @@
+#experience, #objective, #education, #certifications, #hobby {
+  font-family: monospace;
+  font-size: 14px;
+  color: white;
+}
+#experience h1, #objective h1, #education h1, #certifications h1, #hobby h1, #experience h2, #objective h2, #education h2, #certifications h2, #hobby h2 {
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+}
+#experience p:first-line, #objective p:first-line, #education p:first-line, #certifications p:first-line, #hobby p:first-line {
+  font-weight: bold;
+}
+#experience p::first-letter, #objective p::first-letter, #education p::first-letter, #certifications p::first-letter, #hobby p::first-letter {
+  font-size: 18px;
+  color: grey;
+}
+#experience a[target=_blank], #objective a[target=_blank], #education a[target=_blank], #certifications a[target=_blank], #hobby a[target=_blank] {
+  text-decoration: underline wavy;
+}
+#experience a[target=_blank]:hover, #objective a[target=_blank]:hover, #education a[target=_blank]:hover, #certifications a[target=_blank]:hover, #hobby a[target=_blank]:hover {
+  font-size: 20px;
+}
+
+#experience p:first-line {
+  font-size: 18px;
+  color: grey;
+}
+
+.grid-sidebar ul {
+  margin-top: 10px;
+  margin-right: 50px;
+  color: white;
+  text-align: left;
+  list-style: none;
+}
+.grid-sidebar ul p {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+}
+.grid-sidebar ul li:hover {
+  font-weight: bold;
+}
+
+@media (min-width: 700px) {
+  .grid-sidebar ul {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=about-style.css.map */

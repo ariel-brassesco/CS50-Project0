@@ -1,0 +1,70 @@
+
+%CV-section {
+    font-family: monospace;
+    font-size: 14px;
+    color: white;
+    
+    h1,h2 {
+        font-size: 20px;
+        color: black;
+        font-weight: bold;
+    }
+
+    p:first-line {
+        font-weight: bold;
+    }
+
+    p::first-letter {
+        font-size: 18px;
+        color: grey;
+    }
+    a[target="_blank"] {
+        text-decoration: underline wavy;
+    }
+    a[target="_blank"]:hover {
+        font-size: 20px;
+    }
+
+}
+
+#objective,#education,#certifications,#hobby {
+    @extend %CV-section;
+}
+
+#experience {
+    @extend %CV-section;
+
+    p:first-line {
+        font-size: 18px;
+        color: grey;
+    }
+}
+
+.grid-sidebar ul {
+    margin-top: 10px;
+    margin-right: 50px;
+    color: white;
+    text-align: left;
+    list-style: none;
+
+    p {
+        font-size: 20px;
+        font-weight: bold;
+        margin: 0;
+        text-align: center;
+    }
+    
+    li:hover {
+        font-weight: bold;
+    }
+}
+
+
+
+
+@media (min-width: 700px){
+    .grid-sidebar ul {
+        display: none;
+    }
+}
+
